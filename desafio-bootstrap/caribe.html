@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viajes Juyow</title>
+    <title>El caribe</title>
     <!-- BOOTSTRAP CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- MI PROPIO CSS -->
     <link rel="stylesheet" href="style-propio.css">
 </head>
 <body>
-    <!-- AQUI VA LA NAVBAR  -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+     <!-- AQUI VA LA NAVBAR  -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="./img/logojuyow.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
@@ -24,7 +24,7 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Quienes Somos?</a>
+                <a class="nav-link active" aria-current="page" href="./index.html">Quienes Somos?</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./hoteles.html">Hoteles</a>
@@ -37,7 +37,7 @@
                   Destinos
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="./caribe.html">El Caribe</a></li>
+                  <li><a class="dropdown-item" href="#">El Caribe</a></li>
                   <li><a class="dropdown-item" href="#">Europa</a></li>
                   <li><a class="dropdown-item" href="#">Estados Unidos</a></li>
                   <li><a class="dropdown-item" href="#">Africa</a></li>
@@ -53,114 +53,44 @@
         </div>
       </nav>
 
-      <!-- aqui va el contenido del main -->
-    
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+<!-- empieza carousel  -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./img/imagenprincipal.jpeg" class="d-block w-100" alt="imagen principal">
-            <div class="carousel-caption d-none d-md-block text-dark fondosemitransparente"> <!-- usando css propio -->
-                <h3>Tu mejor opción a la hora de viajar!</h3>
-                <p>La primer agencia que te garantiza el mejor precio siempre!</p>
-              </div>
+            <img src="./img/caribe1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/caribe2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/caribe3.png" class="d-block w-100" alt="...">
           </div>
         </div>
-      </div>
-      <hr>
-
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Atención 24/7
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>Atención las 24 horas del día.</strong> Nuestro equipo de atención al cliente esta disponible las 24 horas del dia, para cualquier duda que tengas con tu viaje, desde pedir un traslado al hotel, hasta cambiar el tipo de habitación que pediste, siempre estaremos dispuestos a ayudarte.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Encontraste un mejor precio? Lo igualamos
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>Garantía del mejor precio. SIEMPRE.</strong> Nuestro precio garantizado siempre sera el mejor, si encontraste un mejor precio en algún otro lado, muéstranos y te ofreceremos un mejor precio, asi es, SIEMPRE. 
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Cancelación gratuita
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>Te arrepentiste de viajar, o tienes algún imprevisto?.</strong> Nuestra política de cancelación es flexible de acuerdo a tu viaje, si tuviste algún imprevisto, o decidiste ya no viajar, no importa, contactanos y veremos la manera de llegar a una solución que a tí! te convenga.
-            </div>
-          </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
 
-      <hr>
-      <h2 class="tours-texto">Tours Disponibles</h2>
+<!-- empieza descripcion -->
 
-      <div class="row"> <!-- inicia container cartas -->
-        <div class="col-sm-3">
-          <div class="card text-center">
-            <div class="card-body">
-                <img src="./img/coliseo.jpeg" class="card-img-top" alt="coliseo">
-                <div class="card-body">
-                  <h5 class="card-title">Maravillas Europeas</h5>
-                  <p class="card-text">Descubre por 16 días las mejores maravillas de toda Europa.</p>
-                  <a href="#" class="btn btn-primary">Me interesa</a>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="card text-center">
-            <div class="card-body">
-                <img src="./img/jirafa.jpeg" class="card-img-top" alt="jirafas">
-                <div class="card-body">
-                  <h5 class="card-title">Safari Africano</h5>
-                  <p class="card-text">Date un tour por 15 días en el mejor safari natural africano.</p>
-                  <a href="#" class="btn btn-primary">Me interesa</a>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="card text-center">
-              <div class="card-body">
-                <img src="./img/caribe.jpeg" class="card-img-top" alt="mar caribe">
-                <div class="card-body">
-                  <h5 class="card-title">Caribe Mexicano</h5>
-                  <p class="card-text">Descubre las mejores playas de México solo con este tour de 15 días!</p>
-                  <a href="#" class="btn btn-primary">Me interesa</a>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="card text-center">
-          <div class="card-body">
-            <img src="./img/japon.png" class="card-img-top" alt="japon">
-            <div class="card-body">
-              <h5 class="card-title">Japón Total</h5>
-              <p class="card-text">Conoce completamente Japón por 16 días!</p>
-              <a href="#" class="btn btn-primary">Me interesa</a>
-          </div>
-        </div>
-      </div>
-  </div>
+<main>
+    <h1> EL CARIBE ES TU MEJOR OPCIÓN</h1>
+    <p>Contamos con los mejores hoteles por todo el caribe, contactanos y encontras la mejor opcion para ti y tu familia</p>
+    <button type="button" class="btn btn-dark">CONTACTANOS</button>
+    <button type="button" class="btn btn-dark">IR A RESERVAR</button>
+</main>
 
-  <!-- FOOTER CON ICONOS DE BOOTSTRAP -->
+       <!-- FOOTER CON ICONOS DE BOOTSTRAP -->
 
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="bootstrap" viewBox="0 0 118 94">
@@ -202,5 +132,6 @@
    
    <!-- SCRIPT BOOTSTRAP -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
 </body>
 </html>
